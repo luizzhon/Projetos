@@ -1,0 +1,170 @@
+::-webkit-scrollbar{
+    width: 8px;
+    height: 20px; 
+}
+
+::-webkit-scrollbar-button{
+    height: 0.1px;
+}
+::-webkit-scrollbar-track {
+    background-color: greenyellow;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #232323;
+    border-radius: 10px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header{
+    background-color:#232323;
+    color: white;
+    overflow: auto;
+    border-bottom: 3px solid greenyellow;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.navbar{
+    float: right;
+    list-style: none;
+}
+
+.titulo{
+    margin: 0; 
+    float: left; 
+}
+
+.header .navbar li{
+    float: left;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.destaque{
+    color: greenyellow;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.navbar a:hover{
+    color: greenyellow;
+    text-shadow:  3px 1px 1px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.navbar .sobre {
+    color: #B1B1B1;
+}
+
+/* Banner */
+
+.banner{
+    background-image: url(imgs/teste.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #232323;
+    background-attachment: fixed;
+    border-bottom: solid greenyellow;
+}
+
+.banner h1 {
+    color: white;
+    margin: 0;
+    padding-top: 15%;
+    padding-bottom: 20%;
+    font-size: 80px;
+    font-weight: 700;
+    margin: auto;
+}
+
+/* Seção */
+.section {
+    background-color: #232323;
+    color: white;
+    margin: 0;
+    border-bottom: solid greenyellow;
+    
+    
+}
+
+.section  h2{
+    padding-top: 10%;
+    margin: 0;
+    font-size: 45px;
+    width: 60%;
+}
+
+.section h3{
+    padding-top: 5%;
+    color: #B1B1B1;
+    padding-bottom: 8%;
+    margin: 0;
+    
+}
+
+/* Seção 2*/
+
+.section2 {
+    background-color: white;
+    margin: 0;
+}
+
+.section2 h2 {
+    padding-top: 10%;
+    color: #232323;
+    margin: 0;
+    font-size: 45px;
+    width: 60%;
+    padding-bottom: 2px;
+}
+
+.section2 h3{
+    padding-top: 5%;
+    color: #B1B1B1;
+    padding-bottom: 8%;
+    margin: 0;
+}
+
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    background-color: #232323;
+    height: 90px;
+    border-top: solid greenyellow;
+}
+
+.footer h4 {
+    margin: 0;
+    font-weight: 100;
+    color:greenyellow; 
+    padding-top: 40px;
+    cursor: pointer;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover {
+    text-shadow: 3px 1px 1px greenyellow;
+    transition: 0.0s;
+    color: #232323;
+    
+}

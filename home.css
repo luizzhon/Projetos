@@ -1,0 +1,169 @@
+::-webkit-scrollbar{
+    width: 8px;
+    height: 20px; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-button{
+    height: 0.1px;
+    
+}
+::-webkit-scrollbar-track {
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #232323;
+    border-radius: 10px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header{
+    background-color:#232323;
+    color: white;
+    overflow: auto;
+    border-bottom: solid greenyellow;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.navbar{
+    float: right;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.titulo{
+    margin: 0; 
+    float: left; 
+}
+
+.header .navbar li{
+    float: left;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.destaque{
+    color: greenyellow;
+}
+.navbar a:hover{
+    color: greenyellow;
+    text-shadow:  3px 1px 1px #232323;
+    transition: 0.5s;
+}
+
+.navbar .home {
+    color: #B1B1B1;
+}
+
+/* Banner */
+
+.banner{
+    text-align: center;
+    background-image: url(imgs/office2.jpg);
+    background-repeat: no-repeat;
+    background-color: #232323;
+    height: 400px;
+    background-attachment: fixed;
+    border-bottom:solid greenyellow;
+    font-size: 17px;
+    background-size: cover;
+}
+/* background-color: fica como plano de fundo caso a imagem não carregue */
+
+.banner h1 {
+    margin-top: 0;
+    font-size: 55px;
+    padding-top: 150px;
+    
+}
+
+.banner h3 {
+    color: #232323
+    
+}
+
+/* Saber mais */
+
+.saiba-mais button {
+    border: 0;
+    background-color: greenyellow;
+    color: #232323;
+    text-transform: uppercase;
+    border: 0;
+    padding: 10px 30px;
+    margin-top: 27px;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+
+.saiba-mais {
+    text-align: center;
+    background-color: #232323;
+    height: 90px;
+    border-bottom: solid greenyellow;
+}
+
+/* Missão Visão Valores*/
+
+.box img {
+    height: 100px;
+}
+
+.box {
+    border-bottom: solid greenyellow;
+    overflow: auto;
+}
+
+.box-item{
+    border-bottom: greenyellow; 
+    float: left;
+    text-align: center;
+    width: 27%;
+    padding: 3% ; 
+}
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    background-color: #232323;
+    height: 90px;
+}
+
+.footer h4 {
+    margin: 0;
+    font-weight: 100;
+    color:greenyellow; 
+    padding-top: 40px;
+    cursor: pointer;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover {
+    text-shadow: 3px 1px 1px greenyellow;
+    transition: 0.0s;
+    color: #232323;
+}
+
