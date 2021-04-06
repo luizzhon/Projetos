@@ -16,7 +16,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', 'arial','serif'; 
     margin: 0;
 }
 
@@ -73,7 +73,7 @@ body{
 /* Banner */
 
 .banner{
-    background-image: url(imgs/teste.jpg);
+    background-image: url(imgs/proposito.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #232323;
@@ -92,13 +92,12 @@ body{
 }
 
 /* Seção */
+
 .section {
     background-color: #232323;
     color: white;
     margin: 0;
     border-bottom: solid greenyellow;
-    
-    
 }
 
 .section  h2{
@@ -113,7 +112,6 @@ body{
     color: #B1B1B1;
     padding-bottom: 8%;
     margin: 0;
-    
 }
 
 /* Seção 2*/
@@ -139,7 +137,6 @@ body{
     margin: 0;
 }
 
-
 /* Footer */
 
 .footer {
@@ -163,8 +160,8 @@ body{
 }
 
 .footer a:hover {
-    text-shadow: 3px 1px 1px greenyellow;
+    text-shadow: 1px 1px 1px greenyellow;
     transition: 0.0s;
     color: #232323;
-    
+    transition-delay: unset;
 }
