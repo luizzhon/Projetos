@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico Estático - ChartJS</title>
+    <!--Link para código do ChartsJS-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+
+    <style>
+        .meu-grafico {
+            width: 85%;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Coloque sempre o gráfico em uma div, fica mais fácil para ajustar na página-->
+    <div class="meu-grafico">
+        <!--Gráfico virá aqui-->
+        <canvas id="myChart"></canvas>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    // ctx é o contexto. Onde é para o gráfico ser renderizado? 
+    // Na div myChart! Vamos selecioná-la por getElementById
+    var ctx = document.getElementById('myChart');
+
+    // ao criar um new Chart, colocamos ->
+    // (contexto, { type, data e options} )
+    var meuGrafico = new Chart(ctx, {
+        // TYPE -> qual o tipo do gráfico? será um gráfico de barras? linhas? define aqui
+        type: 'line',
+
+        // DATA -> os dados renderizados no gráfico:
+        data: {
+            // Informações em Eixo X
+            labels: ["jan", "fev", "mar", "abr", "mai", "jun"],
+            // Datasets -> grupos de dados!
+            datasets: [
+                // Primeiro dataset    
+                {
+                    // Qual o título deste dataset?
+                    label: "Rendimentos 2021",
+                    // Dados? Lembre-se, respectivos a labels.
+                    data: [8500, 9000, 10000, 9500, 10500, 11000],
+                    // expessura da linha
+                    borderWidth: 10,
+                    // cor da linha - em rgba, a é a opacidade.
+                    // 1 = 100% // 0.5 = 50%
+                    borderColor: 'rgba(0,0,0, 1.0)',
+                    // cor de "fundo" dos dados na tela. transparent = sem cor.
+                    backgroundColor: 'rgba(124,252,0, 0.0)',
+                },
+
+                // Segundo dataset
+                {
+                    // igual o anterior. Mas, aqui, type line
+                    type: 'line',
+                    label: "Rendimentos 2020",
+                    data: [7500, 8000, 9000, 9500, 9000, 10000],
+                    borderWidth: 10,
+                    borderColor: 'rgba(124,252,0, 1.0)',
+                    backgroundColor: 'rgba(124,252,0,0.0)',
+                }
+            ]
+        },
+
+        // OPTIONS -> Opções globais
+        options: {
+
+            title: {
+                // mostrar titulo?
+                display: true,
+                // tamanho do texto
+                fontSize: 50,
+                // texto no titulo
+                text: "Meus rendimentos",
+                // onde? right? left? top?
+                position: 'top',
+            },
+            legend: {
+                // mostrar legenda?
+                display: true,
+                // ao contrario? (dataset 1 depois de 2)
+                reverse: true,
+                // onde?
+                position: 'right'
+            },
+            layout: {
+                padding: {
+                    // padding do grafico, pode add right e bottom também
+                    left: 70,
+                    top: 70
+                },
+
+            }
+        }
+    })
+
+    // mudando cor de fonte de tudo
+    Chart.defaults.global.defaultFontColor = "#000000";
+</script>
