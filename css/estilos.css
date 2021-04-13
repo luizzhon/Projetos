@@ -60,6 +60,7 @@ body{
 .destaque{
     color: greenyellow;
 }
+
 .navbar a:hover{
     color: greenyellow;
     text-shadow:  3px 1px 1px #232323;
@@ -232,6 +233,10 @@ body{
     margin: 0;
 }
 
+.navbar .sobre {
+    color: #B1B1B1;
+}
+
 /* Footer */
 
 .footer {
@@ -264,6 +269,9 @@ body{
 /* Página de Login */
 /* Aula 09-04 */
 
+.navbar .login {
+    color: #B1B1B1;
+}
 a {
     text-decoration: none;
     color: white;
@@ -302,4 +310,10 @@ a:hover {
     padding: 5px 20px;
     border-radius: 20px;
     cursor: pointer;
+}
+
+/* Tela de Cadastro */
+
+.navbar .cadastro {
+    color: #B1B1B1;
 }
